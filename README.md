@@ -4,7 +4,7 @@ Uses [discord.js](https://discord.js.org/#/), which does not currently work with
 ## How it works
 Every second, the next 2 IDs are checked from `https://blog.counter-strike.net/wp-json/wp/v2/categories?post=<ID>`.  
 If the request returns with a `400` error, no post is detected.  
-If the request returns with a `401` error, a hidden post is detected.  
+If the request returns with a `401` error, hidden activity is detected. It is then ran through a second endpoint (`https://blog.counter-strike.net/wp-json/wp/v2/posts/<ID>`. If this request returns with a `401` error, that activity is a new hidden post.   
 If the request returns no error, a public post is detected.  
 
 CSGO's blog uses wordpress, which works with a revision system. Any time any blogpost is updated in any way, a new ID is formed.
