@@ -1,3 +1,6 @@
+# [Deprecated]
+With the anouncement of Counter-Strike 2, Valve finally switched to a new blog website. This does not use WordPress and therefore can't be watched in the same way. As of now, I do not intend on making a new blog tracker.
+
 # CSGO Blog Activity Discord Bot
 Uses [discord.js](https://discord.js.org/#/), which does not currently work with Bun.
 
